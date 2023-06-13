@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f8f2ed"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.AddRecordFragment">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <TextView
+            android:id="@+id/addentrytxt"
+            style="@style/MaterialAlertDialog.Material3.Title.Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/roboto_medium"
+            android:paddingHorizontal="30dp"
+            android:text="New Record"
+            android:textColor="#30251d"
+            android:textSize="32dp">
+
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_weight="3"
+        android:background="@drawable/round_top_corners"
+        android:layout_height="0dp">
+        <ScrollView
+            android:id="@+id/addentryscrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_centerInParent="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/datelayout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    app:endIconTint="#30251d"
+                    android:allowClickWhenDisabled="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginHorizontal="25dp"
+                    app:hintTextColor="#30251d"
+                    android:textColorHint="#30251d"
+                    android:layout_marginTop="40dp"
+                    android:focusable="false"
+                    app:endIconMode="custom"
+                    app:endIconDrawable="@drawable/calender_icon"
+                    android:focusableInTouchMode="false"
+                    app:boxStrokeErrorColor="?attr/colorError"
+                    android:hint="Date">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/datetxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:allowClickWhenDisabled="true"
+                        android:clickable="true"
+                        android:focusable="true"
+
+                        android:textColor="#918887"
+                        android:background="@drawable/all_rounded_bg_white_20dp"
+                        android:enabled="false"
+                        app:errorTextColor="?attr/colorError"
+                        android:inputType="date" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/vehiclelayout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxStrokeErrorColor="?attr/colorError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/datelayout"
+                    app:hintTextColor="#30251d"
+                    android:layout_alignStart="@+id/datelayout"
+                    android:layout_alignEnd="@+id/datelayout"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="0dp"
+                    android:textColorHint="#30251d"
+                    android:hint="Vehicle No.">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/vehiclenotxt"
+                        android:focusableInTouchMode="true"
+                        android:background="@drawable/all_rounded_bg_white_20dp"
+                        app:errorTextColor="?attr/colorError"
+                        android:textColor="#918887"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/weightlayout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:hintTextColor="#30251d"
+                    android:textColorHint="#30251d"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vehiclelayout"
+                    app:boxStrokeErrorColor="?attr/colorError"
+                    android:layout_alignStart="@+id/datelayout"
+                    android:layout_alignEnd="@+id/datelayout"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="0dp"
+                    android:hint="Weight">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/weighttxt"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/all_rounded_bg_white_20dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#918887"
+                        android:inputType="numberDecimal" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/deductionlayout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/weightlayout"
+                    app:hintTextColor="#30251d"
+                    android:layout_alignStart="@+id/weightlayout"
+                    android:layout_alignEnd="@+id/weightlayout"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="20dp"
+                    android:textColorHint="#30251d"
+                    android:layout_marginEnd="0dp"
+                    android:hint="Weight Deduction in %">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/deductiontxt"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/all_rounded_bg_white_20dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#918887"
+                        android:inputType="numberDecimal" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/pricelayout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:hintTextColor="#30251d"
+                    android:textColorHint="#30251d"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/deductionlayout"
+                    app:boxStrokeErrorColor="?attr/colorError"
+                    android:layout_alignStart="@+id/deductionlayout"
+                    android:layout_alignEnd="@+id/deductionlayout"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="0dp"
+                    android:hint="Price Per Mann">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/pricetxt"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/all_rounded_bg_white_20dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#918887"
+                        android:inputType="numberDecimal" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/commentslayout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:hintTextColor="#30251d"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pricelayout"
+                    android:textColorHint="#30251d"
+                    android:layout_alignStart="@+id/pricelayout"
+                    android:layout_alignEnd="@+id/pricelayout"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="0dp"
+                    android:hint="Comments">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/commentstxt"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/all_rounded_bg_white_20dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#918887"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/savebtn"
+                    style="@style/Widget.Material3.Button.ElevatedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/commentslayout"
+                    android:layout_alignStart="@+id/commentslayout"
+                    android:layout_alignEnd="@+id/commentslayout"
+                    android:layout_marginHorizontal="100dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#30251d"
+                    android:elevation="10dp"
+                    android:paddingVertical="10dp"
+                    android:text="Save"
+                    android:textColor="@color/white"
+                    android:textSize="25dp">
+
+                </Button>
+
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+</LinearLayout>

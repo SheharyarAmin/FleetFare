@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffff"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.selectDisplayRange">
+    <RelativeLayout
+        android:id="@+id/selectdatetxt"
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:background="@drawable/round_bottom_corners"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_height="0dp">
+
+        <TextView
+            android:id="@+id/selectiontxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+
+            android:fontFamily="@font/roboto_medium"
+            android:paddingHorizontal="30dp"
+            android:text="Select a date \nto retrieve\nthe relevant\nrecord "
+            android:textColor="#30251d"
+            android:textSize="52dp" />
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/selectiontxt"
+            android:layout_alignEnd="@+id/selectiontxt"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="-66dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/data_retrieve_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1.2"
+        android:layout_height="0dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/datelayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="70dp"
+            android:layout_marginTop="40dp"
+            android:elevation="20dp"
+            app:endIconMode="custom"
+            app:endIconDrawable="@drawable/calender_icon"
+            app:endIconTint="#30251d"
+            android:hint="Date"
+            android:allowClickWhenDisabled="true"
+            android:clickable="true"
+            android:textColorHint="#30251d"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="12dp"
+            app:hintTextColor="#30251d"
+            android:focusable="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/date_menu_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:allowClickWhenDisabled="true"
+                android:background="@drawable/all_rounded_bg_white_20dp"
+                android:clickable="true"
+                android:enabled="false"
+                android:inputType="date"
+                android:textColor="#918887"
+                android:textSize="18dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/savebtn"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/datelayout"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginHorizontal="75dp"
+            android:layout_marginBottom="50dp"
+            android:backgroundTint="#30251d"
+            android:elevation="18dp"
+            android:paddingHorizontal="35dp"
+            android:paddingVertical="12dp"
+            android:text="Save"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+</LinearLayout>

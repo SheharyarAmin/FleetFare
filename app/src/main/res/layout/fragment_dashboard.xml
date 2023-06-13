@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f2ed"
+    android:orientation="vertical"
+    tools:context=".Fragments.dashboard">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1.4"
+        android:layout_height="0dp">
+        <TextView
+            android:id="@+id/welcometxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_medium"
+            android:paddingHorizontal="30dp"
+            android:textColor="#30251d"
+            android:text="Greetings!"
+            android:textSize="32dp" />
+        <TextView
+            android:id="@+id/statstxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/welcometxt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:textColor="#918887"
+            android:fontFamily="@font/roboto_medium"
+            android:paddingHorizontal="30dp"
+            android:text="Here are your stats for the current month"
+            android:textSize="28dp" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="20dp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/statstxt"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linearitem"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:background="@drawable/all_rounded_bg_white"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/dayitemrellayout"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginVertical="20dp">
+
+                    <TextView
+                        android:id="@+id/vehicle_no_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Amount"
+                        android:textColor="#30251d"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/amount_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Rs. 0.0"
+                        android:textColor="#918887"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearitem1"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/all_rounded_bg_white"
+                android:layout_below="@+id/linearitem"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/dayitemrellayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginVertical="20dp">
+
+                    <TextView
+                        android:id="@+id/vehicle_no_txt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true"
+                        android:text="Weight Supplied"
+                        android:textColor="#30251d"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/weight_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="0.0 Kg"
+                        android:textColor="#918887"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearitem2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearitem1"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/all_rounded_bg_white"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/dayitemrellayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginVertical="20dp">
+
+                    <TextView
+                        android:id="@+id/vehicle_no_txt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Shipment Count"
+                        android:textColor="#30251d"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/shipment_count_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="0"
+                        android:textColor="#918887"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:background="@drawable/round_top_corners"
+        android:layout_weight="0.8"
+        android:layout_height="0dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="40dp"
+                android:paddingHorizontal="20dp"
+                android:paddingBottom="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/gotoaddrecordlinearlay"
+                    android:layout_width="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:onClick="goToNewRecordFragment"
+                    android:background="@drawable/all_rounded_bg_white_20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/addrecrellayout"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginVertical="10dp">
+
+                        <TextView
+                            android:id="@+id/newrectxt"
+                            android:paddingStart="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentStart="true"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="New Record"
+                            android:textColor="#30251d"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:id="@+id/addicon"
+                            android:layout_width="40dp"
+                            android:paddingEnd="15dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/addrecordicon"
+                            tools:ignore="RtlSymmetry" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/gotogetrecordlinearlay"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/gotoaddrecordlinearlay"
+                    android:background="@drawable/all_rounded_bg_white_20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/getrecrellayout"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginVertical="10dp">
+
+                        <TextView
+                            android:id="@+id/oldrectxt"
+                            android:paddingStart="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Get Record"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:textColor="#30251d"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:id="@+id/geticon"
+                            android:layout_width="40dp"
+                            android:paddingEnd="15dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/getrecordicon"
+                            />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/gotoexportrecordlinearlay"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/gotogetrecordlinearlay"
+                    android:background="@drawable/all_rounded_bg_white_20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/exportrecrellayout"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginVertical="10dp">
+
+                        <TextView
+                            android:id="@+id/exportrectxt"
+                            android:paddingStart="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Export Excel File"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:textColor="#30251d"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:id="@+id/exporticon"
+                            android:layout_width="40dp"
+                            android:paddingEnd="15dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/exportexcelicon"
+                            />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</LinearLayout>

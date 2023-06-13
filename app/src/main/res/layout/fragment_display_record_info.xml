@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#ffff"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.DisplayRecordInfoFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="0.5"
+        android:background="#d1edbf"
+        android:layout_height="0dp">
+
+        <TextView
+            android:id="@+id/displayentrytxt"
+            style="@style/MaterialAlertDialog.Material3.Title.Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="25dp"
+            android:paddingStart="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="#30251d"
+            android:text="Record Details"
+            android:textSize="30dp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_weight="2"
+        android:paddingVertical="30dp"
+        android:layout_height="0dp">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true">
+
+                <RelativeLayout
+                    android:id="@+id/daterellayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/all_rounded_bg_white_20dp"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="20dp">
+
+                    <TextView
+                        android:id="@+id/textview1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Date"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="#30251d"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/datedisplaytxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:text="21/10/2022"
+                        android:textColor="#918887"
+                        android:textSize="18dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/vehiclerellayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/daterellayout"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/all_rounded_bg_white_20dp"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="20dp">
+
+                    <TextView
+                        android:id="@+id/textview2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Vehicle ID"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="#30251d"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/vehicledisplaytxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:inputType="textCapCharacters"
+                        android:text="leh 8799"
+                        android:textColor="#918887"
+                        android:textSize="18dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/weightrellayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/vehiclerellayout"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/all_rounded_bg_white_20dp"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="20dp">
+
+                    <TextView
+                        android:id="@+id/textview3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Original Weight"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="#30251d"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/weightdisplaytxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:text="3000 kg"
+                        android:textColor="#918887"
+                        android:textSize="18dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/deductionrellayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/weightrellayout"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/all_rounded_bg_white_20dp"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="20dp">
+
+                    <TextView
+                        android:id="@+id/textview4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Weight Deduction"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="#30251d"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/deductiondisplaytxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:text="3000 %"
+                        android:textColor="#918887"
+                        android:textSize="18dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/weightafterdeductionrellayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/deductionrellayout"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/all_rounded_bg_white_20dp"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="20dp">
+
+                    <TextView
+                        android:id="@+id/textview5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Weight After \nDeduction"
+                        android:textColor="#30251d"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/weightafterdeductiondisplaytxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:text="3000 kg"
+                        android:textColor="#918887"
+                        android:textSize="18dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/finalweightrellayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/weightafterdeductionrellayout"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/all_rounded_bg_white_20dp"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="20dp">
+
+                    <TextView
+                        android:id="@+id/textview6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Final Weight"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="#30251d"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/finalweightdisplaytxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:text="3000 Mann"
+                        android:textColor="#918887"
+                        android:textSize="18dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/pricerellayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/finalweightrellayout"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/all_rounded_bg_white_20dp"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="20dp">
+
+                    <TextView
+                        android:id="@+id/textview7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Rate Per Mann"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="#30251d"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/pricedisplaytxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:text="Rs. 3000"
+                        android:textColor="#918887"
+                        android:textSize="18dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/totalpayablerellayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/pricerellayout"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/all_rounded_bg_white_20dp"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="20dp">
+
+                    <TextView
+                        android:id="@+id/textview8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Total Payment"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="#30251d"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/paymentdisplaytxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:text="Rs. 3000"
+                        android:textColor="#918887"
+                        android:textSize="18dp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "715581952034",
+    "firebase_url": "https://monthlyrecordapp-default-rtdb.firebaseio.com",
+    "project_id": "monthlyrecordapp",
+    "storage_bucket": "monthlyrecordapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:715581952034:android:80b5fd9f34a6e2f1993a7b",
+        "android_client_info": {
+          "package_name": "com.example.fleetfare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "715581952034-v20cntavn4bl9uhcl11beqesd1p3tf8g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRCwjkwlmtQZhlws6SdMpKD59Uh-OcSJ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "715581952034-v20cntavn4bl9uhcl11beqesd1p3tf8g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:715581952034:android:cf3ace514eb03dc1993a7b",
+        "android_client_info": {
+          "package_name": "com.example.monthlyrecordapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "715581952034-v20cntavn4bl9uhcl11beqesd1p3tf8g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRCwjkwlmtQZhlws6SdMpKD59Uh-OcSJ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "715581952034-v20cntavn4bl9uhcl11beqesd1p3tf8g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/addRecordFragment"
+        android:name="com.example.fleetfare.Fragments.AddRecordFragment"
+        android:label="fragment_add_record"
+        tools:layout="@layout/fragment_add_record" />
+    <fragment
+        android:id="@+id/recordOnDate"
+        android:name="com.example.fleetfare.Fragments.recordOnDate"
+        android:label="fragment_record_on_date"
+        tools:layout="@layout/fragment_record_on_date" >
+        <action
+            android:id="@+id/action_recordOnDate_to_displayRecordInfoFragment"
+            app:destination="@id/displayRecordInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectDisplayRange"
+        android:name="com.example.fleetfare.Fragments.selectDisplayRange"
+        android:label="fragment_select_display_range"
+        tools:layout="@layout/fragment_select_display_range" >
+        <action
+            android:id="@+id/action_selectDisplayRange_to_recordOnDate"
+            app:destination="@id/recordOnDate" />
+    </fragment>
+    <fragment
+        android:id="@+id/displayRecordInfoFragment"
+        android:name="com.example.fleetfare.Fragments.DisplayRecordInfoFragment"
+        android:label="fragment_display_record_info"
+        tools:layout="@layout/fragment_display_record_info" />
+    <fragment
+        android:id="@+id/dashboard"
+        android:name="com.example.fleetfare.Fragments.dashboard"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashboard_to_addRecordFragment"
+            app:destination="@id/addRecordFragment" />
+        <action
+            android:id="@+id/action_dashboard_to_selectDisplayRange"
+            app:destination="@id/selectDisplayRange" />
+        <action
+            android:id="@+id/action_dashboard_to_dataExportFragment"
+            app:destination="@id/dataExportFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dataExportFragment"
+        android:name="com.example.fleetfare.Fragments.dataExportFragment"
+        android:label="fragment_data_export"
+        tools:layout="@layout/fragment_data_export" />
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.fleetfare.splashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_dashboard"
+            app:destination="@id/dashboard" />
+    </fragment>
+</navigation>
